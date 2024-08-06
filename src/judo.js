@@ -80,6 +80,7 @@ const run = async () => {
 
         // check if done with all files
         if (numStepFilesComplete === numStepFiles) {
+          console.log('heyo');
           const reporter = getReporter({ options: options, stepResults: allStepResults });
           if (reporter) {
             fs.writeFileSync(reporter.outputFile, reporter.generateReport());

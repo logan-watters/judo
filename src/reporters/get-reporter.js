@@ -1,8 +1,8 @@
-import { XunitReporter } from './XunitReporter';
+import { TestlinkReporter } from './TestlinkReporter';
 
 const getReporter = ({ options, stepResults }) => {
   if (options.junitReport) {
-    return new XunitReporter({ stepResults });
+    return new TestlinkReporter({ stepResults });
   } else {
     return null;
   }
