@@ -8,7 +8,7 @@ class TestlinkReporter extends ReporterInterface {
     super({
       stepResults,
       type: 'Testlink',
-      outputFile: '/home/lwatters/testlink_results.txt'
+      outputFile: '/home/testlink_results.txt'
     });
   }
   generateReport () {
