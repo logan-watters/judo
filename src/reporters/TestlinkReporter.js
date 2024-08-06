@@ -39,7 +39,7 @@ class TestlinkReporter extends ReporterInterface {
       }
 
       xml += '\n';
-      const pythonProcess = spawn('python', ['/home/reporter_testlink.py']);
+      const pythonProcess = spawn('python3', ['/home/reporter_testlink.py']);
       pythonProcess.on('close', (code) => {
         console.log(code);
       });
